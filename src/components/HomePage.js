@@ -46,12 +46,10 @@ class HomePage extends Component {
     return(
         
         <div>
-          
           <div className='top'>
             <Link link exact to='/' > <h1>Frimage</h1> </Link>
             <SearchBox searchChange={this.onSearchCange} />
           </div>
-          
           <CardList friends={filteredFriends}/>
         </div>  
       
