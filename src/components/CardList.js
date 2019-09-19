@@ -4,7 +4,7 @@ import Card from './Card';
 
 const CardList = ({friends}) => {
     const cardArray = friends.map((user, i) => {
-        return <Card key={friends[i].id} username={friends[i].username} name={friends[i].name}/>  
+        return <Card key={friends[i].id} username={friends[i].username} name={friends[i].name} id={friends[i].id}/>  
     })
     
     return(

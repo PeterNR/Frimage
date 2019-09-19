@@ -6,10 +6,11 @@ import '../App.css'
 
 
 const Card =({id, name, username}) =>{
+    console.log(id);
     return(
         
         //gjør hele diven til en lenke
-        <Link to={`/friend`} className='linkText'>
+        <Link to={`/friend/${id}`} className='linkText'>
             <div  className='card'>
                 <div >
                     <img 

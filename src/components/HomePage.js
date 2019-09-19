@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import '../App.css';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import /*{BrowserRouter as Router, Switch, Route, */{Link} from 'react-router-dom';
 //import { Link } from '@material-ui/core';
-import Friend from './Friend';
+//import Friend from './Friend';
 
 //import Button from '@material-ui/core/Button';
 

@@ -33,7 +33,7 @@
 }
 
 body{
-  background: lightgray;
+  background: rgb(253, 248, 235);
 }
 
 .top{
@@ -41,13 +41,13 @@ body{
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 50px;
-  background: rgb(255, 242, 214);
-  
+  background: rgb(250, 249, 246);
 }
 
 .top a{
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #47a3a8;
 }
 
 .card{
