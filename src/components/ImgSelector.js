@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { async } from 'q';
+//import { async } from 'q';
 
 const ImgSelector = ({friends}) => {
     useEffect(() => {
@@ -24,7 +24,7 @@ const ImgSelector = ({friends}) => {
   
     }
 
-    let [currentImgIndex, setCurrentImgIndex] = useState('');
+    const [currentImgIndex, setCurrentImgIndex] = useState(5000000);
 
     /*const [currentImg, setCurrentImg] = useState({});
     const [contestingImg, setContestingImg] = useState({});

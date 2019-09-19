@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import Button from '@material-ui/core/Button';
 import '../App.css'
 
 
@@ -29,9 +28,7 @@ const Card =({id, name, username}) =>{
                         <h2 >{name}</h2>
                     </div>
                     <div >
-                        <Button variant='contained' color='primary' onClick = {() => {window.history.pushState({urlPath:'/friend'}, '/friend');}}>
-                            Frimage friend
-                        </Button> 
+                        
                     </div>
                 </div>
             </div>

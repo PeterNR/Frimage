@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../App.js';
 import {Link} from 'react-router-dom';
 import ImgSelector from './ImgSelector';
+import Button from '@material-ui/core/Button';
+
 
 function Friend({match})  {
     useEffect(() => {  
@@ -22,17 +24,24 @@ function Friend({match})  {
     
     
     return(
-        <div className='Friend'>
+        <div >
             <div className='top'>
                 <Link link exact to='/' > <h1>Frimage</h1> </Link>
             </div>
-            <div>
-                <h1>Hello, my name is {name} </h1>
-                <h3>My username is {userName} </h3>
+            <div className='Friend'>
+                <div>
+                    <h1>Name: {name} </h1>
+                    <h3>Username: {userName} </h3>
+                </div>
+                <div className='imgBox'>
+                    <ImgSelector/>
+                    <br/>
+                    <Button variant='contained' color='primary' onClick = {() => {window.history.pushState({urlPath:'/friend'}, '/friend');}}>
+                        Frimage friend
+                    </Button> 
+                </div>
             </div>
-            <div>
-                <ImgSelector/>
-            </div>
+            
             
         </div>
     )
