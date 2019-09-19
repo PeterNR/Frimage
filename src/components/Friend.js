@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react';
 import '../App.js';
 import {Link} from 'react-router-dom';
 
-function Friend(/*{id ,name, username}, */{match})  {
+function Friend({match})  {
     useEffect(() => {  
         fetchUserList();
-        console.log('in useEffect', user);
-        //console.log('in useEffect2', user.name);
+        console.log('in useEffect', userName);
     });
 
-    const [user, setUser] = useState({})
-    
+    const [userName, setUsername] = useState('')
+    const [name, setName] = useState('')
+
     const fetchUserList = async () =>{
         const fetchUserList = await fetch('https://jsonplaceholder.typicode.com/users');
         const userList = await fetchUserList.json();
-        setUser(userList[match.params.id].name)
-        console.log(userList[match.params.id].name);
+        setUsername(userList[match.params.id].username);
+        setName(userList[match.params.id].name);
     }
     
     
@@ -26,8 +26,8 @@ function Friend(/*{id ,name, username}, */{match})  {
                 <Link link exact to='/' > <h1>Frimage</h1> </Link>
             </div>
             <div>
-                <h1>Hello, my name is {user} </h1>
-                <h3>My username is </h3>
+                <h1>Hello, my name is {name} </h1>
+                <h3>My username is {userName} </h3>
             </div>
             
         </div>
