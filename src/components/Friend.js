@@ -26,7 +26,7 @@ function Friend(/*{id ,name, username}, */{match})  {
                 <Link link exact to='/' > <h1>Frimage</h1> </Link>
             </div>
             <div>
-                <h1>Hello, my name is </h1>
+                <h1>Hello, my name is {user} </h1>
                 <h3>My username is </h3>
             </div>
             
