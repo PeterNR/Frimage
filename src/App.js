@@ -10,8 +10,9 @@ function App(){
     <Router>
       <div>
         <Switch>
-          <Route exact path='/friend' component={Friend}/>
           <Route exact path='/' component={HomePage} />
+          <Route  path='/friend' component={Friend}/>
+          <Route  path='/friend/:' component={HomePage} />
         </Switch>
       </div>
     </Router>

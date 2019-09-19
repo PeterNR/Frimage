@@ -11,9 +11,14 @@ function Friend({name, username})
     //henter informasjon fra state og gir ut
     return(
         <div className='Friend'>
-            <Link link exact to='/' > <h1>Frimage</h1> </Link>
-            <h1>Hello, my name is {name}</h1>
-            <h3>My username is {username}</h3>
+            <div className='top'>
+                <Link link exact to='/' > <h1>Frimage</h1> </Link>
+            </div>
+            <div>
+                <h1>Hello, my name is {name}</h1>
+                <h3>My username is {username}</h3>
+            </div>
+            
         </div>
     )
 }

@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 
-.App-header {
+/*.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -19,9 +19,9 @@
   color: white;
 }
 
-.App-link {
+/*.App-link {
   color: #61dafb;
-}
+}*/
 
 @keyframes App-logo-spin {
   from {
@@ -41,6 +41,13 @@ body{
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 50px;
+  background: rgb(255, 242, 214);
+  
+}
+
+.top a{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card{

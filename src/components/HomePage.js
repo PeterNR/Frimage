@@ -37,7 +37,8 @@ class HomePage extends Component {
   render(){
     
     const filteredFriends = this.state.friends.filter(friend => {
-      return friend.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+      return friend.name.toLowerCase().includes(this.state.searchfield.toLowerCase()) || 
+             friend.username.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
 
     /*this.setState({friendImg: [filteredFriends.length()] } );
